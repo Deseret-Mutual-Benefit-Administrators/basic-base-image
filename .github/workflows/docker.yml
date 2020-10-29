@@ -10,9 +10,9 @@ jobs:
       - name: Push to GitHub Packages
         uses: docker/build-push-action@v1
         with:
-          image_name: basic-base-image
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: docker.pkg.github.com
           repository: deseret-mutual-benefit-administrators/basic-base-image
+          tags: deseret-mutual-benefit-administrators/basic-base-image/basic-base-image
           tag_with_ref: true
