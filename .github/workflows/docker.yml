@@ -13,6 +13,5 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: docker.pkg.github.com
-          repository: deseret-mutual-benefit-administrators/basic-base-image
-          tags: deseret-mutual-benefit-administrators/basic-base-image/basic-base-image
-          tag_with_ref: true
+          image: deseret-mutual-benefit-administrators/basic-base-image/basic-base-image
+          tag: latest
